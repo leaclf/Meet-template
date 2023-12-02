@@ -1,0 +1,164 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  max-width: 1080px;
+  margin: 2rem auto 1rem;
+  padding: 0 0.8rem;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background: rgb(1, 50, 67);
+  color: rgb(154, 176, 186);
+  font-size: 1.125rem;
+  position: relative;
+}
+.img1,
+.img4,
+.img5 {
+  display: none;
+}
+.img3 {
+  position: absolute;
+  top: 12%;
+  left: 12%;
+  height: 90px;
+}
+.img2 {
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  height: 140px;
+  z-index: -1;
+}
+.img6 {
+  position: absolute;
+  top: 65%;
+  left: 31%;
+  height: 130px;
+  z-index: -1;
+}
+.header {
+  display: flex;
+}
+.main-n {
+  margin: 7rem 0 10rem;
+  max-width: min-content;
+}
+.main__header {
+  font-size: 3rem;
+  font-family: "sen", Arial, Helvetica, sans-serif;
+  color: rgb(50, 245, 200);
+}
+.main__content {
+  color: rgb(154, 176, 186);
+}
+.btn {
+  padding: 1rem 1.5rem;
+  color: rgb(7, 74, 84);
+  background-color: rgb(50, 245, 200);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  font-family: "inter", Arial, Helvetica, sans-serif;
+}
+footer svg {
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+@media (min-width: 768px) {
+  body {
+    padding: 0 1rem;
+  }
+  .main-n {
+    margin-bottom: 7rem;
+  }
+  .main__header {
+    font-size: 4rem;
+  }
+  .img1 {
+    display: inline-block;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    height: 80px;
+  }
+  .img2 {
+    height: 100px;
+    top: 0;
+    left: 40%;
+  }
+
+  .img3 {
+    top: 6%;
+    left: 6%;
+  }
+  .img4 {
+    display: inline-block;
+    position: absolute;
+    bottom: 5%;
+    left: 32%;
+    height: 160px;
+  }
+  .img5 {
+    display: inline-block;
+    position: absolute;
+    top: 17%;
+    height: 80px;
+    left: 37%;
+    z-index: -1;
+  }
+  .img6 {
+    top: 44%;
+    left: 47%;
+    height: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  .main-n {
+    margin: 4rem 0;
+  }
+  .main__header {
+    font-size: 7rem;
+  }
+  .img1 {
+    top: 45%;
+    left: 73%;
+    height: 130px;
+    z-index: -1;
+  }
+  .img2 {
+    height: 180px;
+    left: 66%;
+  }
+  .img3 {
+    height: 170px;
+    left: -11%;
+    top: 9%;
+    z-index: -1;
+  }
+  .img4 {
+    height: 250px;
+    bottom: -15%;
+    left: 53%;
+  }
+  .img5 {
+    height: 140px;
+    top: 10%;
+    left: 50%;
+  }
+  .img6 {
+    z-index: 2;
+    left: 40%;
+    top: 50%;
+    height: 130px;
+  }
+  .front {
+    position: relative;
+    z-index: 4;
+  }
+}
